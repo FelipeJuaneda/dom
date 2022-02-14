@@ -14,7 +14,6 @@ class Producto{
 
 
 //ARRAY
-
 const productos= [];
 productos.push(new Producto(01,"Local 1", 5000,"3m x 4m"));
 productos.push(new Producto(02,"Local 2", 7000, "5,5m x 5m"));
@@ -23,6 +22,7 @@ productos.push(new Producto(04,"Local 4", 10000, "8 x 7m"));
 productos.push(new Producto(05,"Local 5", 15000, "10 x 9m"));
 
 
+//CONTENEDOR LOCALES Y BOTONES
 let localesDiv = document.getElementById("contenedorLocales");
 for (const producto of productos) {
     //Crear elemento
@@ -36,6 +36,7 @@ for (const producto of productos) {
     //Asignar el padre
     localesDiv.append(localesCont);
 }
+
 
 //BOTONES DE LOCALES
 let botonesLocales = document.getElementsByClassName("btnLocal");
